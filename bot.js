@@ -258,40 +258,7 @@ return;
 
 
 
-if (message.toLowerCase().substring(0,listentrigger.length) == listentrigger) {
-if (listening == true) {
-say('Sorry, but my assistant is unavailable right now...try again in a few seconds!', channelID);
-return;
-} else {
-listeningmode = 'cmd';
-listening = true;
-listeningid = userID;
-say(':grey_question:', channelID);
-return;
-}
 
-if (userID == listeningid) {
-
-if (lis(message,'remind') || lis(message,'remind me') || lis(message,'remindme') || lis(message,'alarm') || lis(message, 'alert') ) {
-say(`Ok! Please format your next message like this:
-
-Check on your brother/t/in 5M
-Go to the store/t/at 14:30
-`, channelID);
-
-return;
-}
-
-
-
-
-
-
-listening = false;
-return;
-}
-
-}
 
 
 
