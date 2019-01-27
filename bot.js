@@ -266,7 +266,7 @@ return;
 listeningmode = 'cmd';
 listening = true;
 listeningid = userID;
-say(':grey_question:, channelID);
+say(':grey_question:', channelID);
 return;
 }
 
